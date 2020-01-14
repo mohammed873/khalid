@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>PAGE CONTACT</title>
+   <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="contact.css">
+   
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css">
+  
+    <link rel="stylesheet" type="text/css" href="slide.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------MOBILE-MENU---------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="header-mobile">
+   
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+        <span class="nav-icon"></span> 
+    </label>
+    
+        <div class="menu">
+      		 
+
+            <a href="#"><b>HOME</b></a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CITY GUIDE</a>
+            <a href="#">BLOGS</a>
+            <a href="#">GALLERY</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PROMO</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------MENU-WEB-------------------------------------------------------------->  
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+        <div class="header2">
+
+          <header>
+
+                <img id="logo" src="logo.png" width="50px" height="50px">
+                <ul class="nav-list">
+                    <li><a href=""><b>HOME</b></a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CITY GUIDE</a></li>
+                    <li><a href="">BLOGS</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">SERViCES</a></li>
+                    <li><a href="">PROMO</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                    <div class="icon">
+                        <i class="fa fa-phone "style="font-size: 24px" ></i> <span>+212 53456768</span>
+                        <i class="fa fa-envelope" style="font-size: 24px"></i> <span>name@email.com</span>
+                    </div>
+            
+        
+                <div class="titreheader">   
+                    <h1 class="maro">Morocco Travel <br>Travel Safe</h1>
+                    <p id="maro"> Morocco travel is the best campany to travel not only it is safe but it <br> is also more funny.</p>
+                    <button type="buttons">EXPLORE</button> 
+                </div>
+            </header>
+            
+        </div>
+        
+<center>
+<div class="photo">
+    
+        <img src="a.png" id="blow">
+    
+        <img src="b.png" id="blow">
+
+        <img  id="blow" src="c.png">
+   
+        <img id="blow" src="d.png">
+ 
+        <img id="blow" src="e.png">
+</div> 
+</center>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="a.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="b.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="c.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="d.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="e.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+
+<div id="dots-slide">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------THE-CONTACT-ELEMENTS---------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<div class="contact-div">
+    <img  id="flag" src="flag1.jpg">
+     <div id="opa"></div>
+     <div class="title-contact">
+        <h1 id="title">contact</h1>
+    </div>
+    <div class="contact-elements">
+      <div id="error-message"></div>
+        
+        <form id="form" onsubmit="return validation()"> 
+          <input id="name" type="text" name="" class="fonts" placeholder=" FULL NAME" onkeyup="validName()">
+          <input id="gmail" type="email" name=""  class="fonts" placeholder=" Eg. Example@Gmail.Com" validate>
+          <input id="phone" type="tel" name="" class="fonts" placeholder=" Eg.+212 612 45 67 45" >
+          <textarea  id="comment" rows="4" cols="50" class="fonts" placeholder=" Write Your Comment"></textarea>
+          <input id="send" value="send now"  type="submit">
+       </form> 
+        
+    </div>
+
+</div>
+ 
+<script>
+  function validation(){
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var mail = document.getElementById("gmail").value
+var error = document.getElementById("error-message");
+var text;
+
+
+if (name.length < 5) {
+  text = "invalid name";
+  error.innerHTML = text;
+  return false;
+
+}
+if (phone.length < 5){
+    text = "invalid phone";
+  error.innerHTML = text;
+}
+if (mail.length < 7){
+  text = "invalid mail";
+  error.innerHTML = text;
+}
+return false;
+
+}
+
+
+
+  
+
+</script>
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------JAVA-SCRIPT------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+</script>
+
+</body>
+</html>
